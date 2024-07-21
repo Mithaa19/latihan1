@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thrift.Wear</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <style>
+        /* Custom styles for the modal */
+        .modal {
+            display: none;
+            max-width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+        }
+        .modal img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .modal h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .modal p {
+            margin-bottom: 10px;
+        }
+        .modal select {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .foto {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .foto h2, .foto p {
+            margin: 10px 0;
+        }
+        .foto a {
+            display: inline-block;
+            padding: 8px 20px;
+            background-color: #FFB6C1;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .foto a:hover {
+            background-color: #fff;
+            color: #FFB6C1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- header -->
+    <div class="medsos">
+        <div class="container">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-x"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <h1><a href="Index.html">THRIFT.WEAR</a></h1>
+            <ul>
+                <li class="active"><a href="Index.html">Home</a></li>   
+                <li><a href="PRODUCT.html">Product</a></li>
+                <li><a href="Service.html">Service</a></li>
+                <li><a href="register.html">Contact</a></li>
+                <li><a href="admin login.html">Login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- label -->
+    <section class="label">
+        <div class="container">
+            <p>Home / Product</p>
+        </div>
+    </section>
+
+    <!-- Product -->
+    <div class='gambar'>
+
+		<div class='foto'>
+            <a data-fancybox data-src="#cardigan1" href="javascript:;">
+                <img src='img/cardigan1.jpeg'>
+                <h2>Cardigan</h2>
+                <p>Rp.55.000,00</p>
+                <span class="buy-now">Buy Now</span>
+            </a>
+        </div>
+        <div style='display:none;' id='cardigan1' class='modal'>
+            <img src='img/cardigan1.jpeg'>
+            <h2>Cardigan</h2>
+            <p>Rp.55.000,00</p>
+            <label for='warna1'>Pilih warna:</label>
+            <select id='warna1'>
+                <option value='red'>Red</option>
+                <option value='blue'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+            <br>
+            <label for='ukuran1'>Pilih ukuran:</label>
+            <select id='ukuran1'>
+                <option value='small'>S</option>
+                <option value='medium'>M</option>
+                <option value='large'>L</option>
+            </select>
+            <br>
+            <p>Deskripsi:</p>
+            <p>Deskripsi produk cardigan ini...</p>
+            <br>
+            <a href='#' class="buy-now">Buy Now</a>
+        </div>
+
+        <div class='foto'>
+            <a data-fancybox data-src="#cardigan2" href="javascript:;">
+                <img src='img/cardigan2.jpeg'>
+                <h2>Sweater</h2>
+                <p>Rp.55.000,00</p>
+                <span class="buy-now">Buy Now</span>
+            </a>
+        </div>
+        <div style='display:none;' id='cardigan2' class='modal'>
+            <img src='img/cardigan2.jpeg'>
+            <h2>Cardigan</h2>
+            <p>Rp.55.000,00</p>
+            <label for='warna1'>Pilih warna:</label>
+            <select id='warna1'>
+                <option value='merah'>Merah</option>
+                <option value='biru'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+            <br>
+            <label for='ukuran1'>Pilih ukuran:</label>
+            <select id='ukuran1'>
+                <option value='small'>S</option>
+                <option value='medium'>M</option>
+                <option value='large'>L</option>
+            </select>
+            <br>
+            <p>Deskripsi:</p>
+            <p>Deskripsi produk cardigan ini...</p>
+            <br>
+            <a href='#' class="buy-now">Buy Now</a>
+        </div>
+
+        <div class='foto'>
+            <a data-fancybox data-src="#cardigan3" href="javascript:;">
+                <img src='img/cardigan3.jpeg'>
+                <h2>Cardigan</h2>
+                <p>Rp.55.000,00</p>
+                <span class="buy-now">Buy Now</span>
+            </a>
+        </div>
+        <div style='display:none;' id='cardigan3' class='modal'>
+            <img src='img/cardigan3.jpeg'>
+            <h2>Cardigan</h2>
+            <p>Rp.55.000,00</p>
+            <label for='warna1'>Pilih warna:</label>
+            <select id='warna1'>
+                <option value='red'>Red</option>
+                <option value='blue'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+            <br>
+            <label for='ukuran1'>Pilih ukuran:</label>
+            <select id='ukuran1'>
+                <option value='small'>S</option>
+                <option value='medium'>M</option>
+                <option value='large'>L</option>
+            </select>
+            <br>
+            <p>Deskripsi:</p>
+            <p>Deskripsi produk cardigan ini...</p>
+            <br>
+            <a href='#' class="buy-now">Buy Now</a>
+        </div>
+
+		<div class='foto'>
+            <a data-fancybox data-src="#cardigan4" href="javascript:;">
+                <img src='img/cardigan4.jpeg'>
+                <h2>Cardigan</h2>
+                <p>Rp.55.000,00</p>
+                <span class="buy-now">Buy Now</span>
+            </a>
+        </div>
+        <div style='display:none;' id='cardigan4' class='modal'>
+            <img src='img/cardigan4.jpeg'>
+            <h2>Cardigan</h2>
+            <p>Rp.55.000,00</p>
+            <label for='warna1'>Pilih warna:</label>
+            <select id='warna1'>
+                <option value='red'>Red</option>
+                <option value='blue'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+            <br>
+            <label for='ukuran1'>Pilih ukuran:</label>
+            <select id='ukuran1'>
+                <option value='small'>S</option>
+                <option value='medium'>M</option>
+                <option value='large'>L</option>
+            </select>
+            <br>
+            <p>Deskripsi:</p>
+            <p>Deskripsi produk cardigan ini...</p>
+            <br>
+            <a href='#' class="buy-now">Buy Now</a>
+        </div>
+
+		<div class='foto'>
+            <a data-fancybox data-src="#cardigan5" href="javascript:;">
+                <img src='img/cardigan5.jpeg'>
+                <h2>Cardigan</h2>
+                <p>Rp.55.000,00</p>
+                <span class="buy-now">Buy Now</span>
+            </a>
+        </div>
+        <div style='display:none;' id='cardigan5' class='modal'>
+            <img src='img/cardigan5.jpeg'>
+            <h2>Cardigan</h2>
+            <p>Rp.55.000,00</p>
+            <label for='warna1'>Pilih warna:</label>
+            <select id='warna1'>
+                <option value='red'>Red</option>
+                <option value='blue'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+            <br>
+            <label for='ukuran1'>Pilih ukuran:</label>
+            <select id='ukuran1'>
+                <option value='small'>S</option>
+                <option value='medium'>M</option>
+                <option value='large'>L</option>
+            </select>
+            <br>
+            <p>Deskripsi:</p>
+            <p>Deskripsi produk cardigan ini...</p>
+            <br>
+            <a href='#' class="buy-now">Buy Now</a>
+        </div>
+
+		<div class='foto'>
+            <a data-fancybox data-src="#cardigan6" href="javascript:;">
+                <img src='img/cardigan6.jpeg'>
+                <h2>Cardigan</h2>
+                <p>Rp.55.000,00</p>
+                <span class="buy-now">Buy Now</span>
+            </a>
+        </div>
+        <div style='display:none;' id='cardigan6' class='modal'>
+            <img src='img/cardigan6.jpeg'>
+            <h2>Cardigan</h2>
+            <p>Rp.55.000,00</p>
+            <label for='warna1'>Pilih warna:</label>
+            <select id='warna1'>
+                <option value='red'>Red</option>
+                <option value='blue'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+            <br>
+            <label for='ukuran1'>Pilih ukuran:</label>
+            <select id='ukuran1'>
+                <option value='small'>S</option>
+                <option value='medium'>M</option>
+                <option value='large'>L</option>
+            </select>
+            <br>
+            <p>Deskripsi:</p>
+            <p>Deskripsi produk cardigan ini...</p>
+            <br>
+            <a href='#' class="buy-now">Buy Now</a>
+        </div>
+
+		<div class='foto'>
+            <a data-fancybox data-src="#cardigan7" href="javascript:;">
+                <img src='img/cardigan7.jpeg'>
+                <h2>Cardigan</h2>
+                <p>Rp.55.000,00</p>
+                <span class="buy-now">Buy Now</span>
+            </a>
+        </div>
+        <div style='display:none;' id='cardigan7' class='modal'>
+            <img src='img/cardigan7.jpeg'>
+            <h2>Cardigan</h2>
+            <p>Rp.55.000,00</p>
+            <label for='warna1'>Pilih warna:</label>
+            <select id='warna1'>
+                <option value='red'>Red</option>
+                <option value='blue'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+            <br>
+            <label for='ukuran1'>Pilih ukuran:</label>
+            <select id='ukuran1'>
+                <option value='small'>S</option>
+                <option value='medium'>M</option>
+                <option value='large'>L</option>
+            </select>
+            <br>
+            <p>Deskripsi:</p>
+            <p>Deskripsi produk cardigan ini...</p>
+            <br>
+            <a href='#' class="buy-now">Buy Now</a>
+        </div>
+
+		<div class='foto'>
+            <a data-fancybox data-src="#cardigan8" href="javascript:;">
+                <img src='img/cardigan8.jpeg'>
+                <h2>Cardigan</h2>
+                <p>Rp.55.000,00</p>
+                <span class="buy-now">Buy Now</span>
+            </a>
+        </div>
+        <div style='display:none;' id='cardigan8' class='modal'>
+            <img src='img/cardigan8.jpeg'>
+            <h2>Cardigan</h2>
+            <p>Rp.55.000,00</p>
+            <label for='warna1'>Pilih warna:</label>
+            <select id='warna1'>
+                <option value='red'>Red</option>
+                <option value='blue'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+            <br>
+            <label for='ukuran1'>Pilih ukuran:</label>
+            <select id='ukuran1'>
+                <option value='small'>S</option>
+                <option value='medium'>M</option>
+                <option value='large'>L</option>
+            </select>
+            <br>
+            <p>Deskripsi:</p>
+            <p>Deskripsi produk cardigan ini...</p>
+            <br>
+            <a href='#' class="buy-now">Buy Now</a>
+        </div>
+
+		<div class='foto'>
+            <a data-fancybox data-src="#cardigan9" href="javascript:;">
+                <img src='img/cardigan9.jpeg'>
+                <h2>Cardigan</h2>
+                <p>Rp.55.000,00</p>
+                <span class="buy-now">Buy Now</span>
+            </a>
+        </div>
+        <div style='display:none;' id='cardigan9' class='modal'>
+            <img src='img/cardigan9.jpeg'>
+            <h2>Cardigan</h2>
+            <p>Rp.55.000,00</p>
+            <label for='warna1'>Pilih warna:</label>
+            <select id='warna1'>
+                <option value='red'>Red</option>
+                <option value='blue'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+            <br>
+            <label for='ukuran1'>Pilih ukuran:</label>
+            <select id='ukuran1'>
+                <option value='small'>S</option>
+                <option value='medium'>M</option>
+                <option value='large'>L</option>
+            </select>
+            <br>
+            <p>Deskripsi:</p>
+            <p>Deskripsi produk cardigan ini...</p>
+            <br>
+            <a href='#' class="buy-now">Buy Now</a>
+        </div>
+
+		<div class='foto'>
+            <a data-fancybox data-src="#cardigan10" href="javascript:;">
+                <img src='img/cardigan10.jpeg'>
+                <h2>Cardigan</h2>
+                <p>Rp.55.000,00</p>
+                <span class="buy-now">Buy Now</span>
+            </a>
+        </div>
+        <div style='display:none;' id='cardigan10' class='modal'>
+            <img src='img/cardigan10.jpeg'>
+            <h2>Cardigan</h2>
+            <p>Rp.55.000,00</p>
+            <label for='warna1'>Pilih warna:</label>
+            <select id='warna1'>
+                <option value='red'>Red</option>
+                <option value='blue'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+            <br>
+            <label for='ukuran1'>Pilih ukuran:</label>
+            <select id='ukuran1'>
+                <option value='small'>S</option>
+                <option value='medium'>M</option>
+                <option value='large'>L</option>
+            </select>
+            <br>
+            <p>Deskripsi:</p>
+            <p>Deskripsi produk cardigan ini...</p>
+            <br>
+            <a href='#' class="buy-now">Buy Now</a>
+        </div>
+
+		<div class='foto'>
+            <a data-fancybox data-src="#cardigan11" href="javascript:;">
+                <img src='img/cardigan11.jpeg'>
+                <h2>Cardigan</h2>
+                <p>Rp.55.000,00</p>
+                <span class="buy-now">Buy Now</span>
+            </a>
+        </div>
+        <div style='display:none;' id='cardigan11' class='modal'>
+            <img src='img/cardigan11.jpeg'>
+            <h2>Cardigan</h2>
+            <p>Rp.55.000,00</p>
+            <label for='warna1'>Pilih warna:</label>
+            <select id='warna1'>
+                <option value='red'>Red</option>
+                <option value='blue'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+            <br>
+            <label for='ukuran1'>Pilih ukuran:</label>
+            <select id='ukuran1'>
+                <option value='small'>S</option>
+                <option value='medium'>M</option>
+                <option value='large'>L</option>
+            </select>
+            <br>
+            <p>Deskripsi:</p>
+            <p>Deskripsi produk cardigan ini...</p>
+            <br>
+            <a href='#' class="buy-now">Buy Now</a>
+        </div>
+
+		<div class='foto'>
+            <a data-fancybox data-src="#cardigan12" href="javascript:;">
+                <img src='img/cardigan12.jpeg'>
+                <h2>Cardigan</h2>
+                <p>Rp.55.000,00</p>
+                <span class="buy-now">Buy Now</span>
+            </a>
+        </div>
+        <div style='display:none;' id='cardigan12' class='modal'>
+            <img src='img/cardigan12.jpeg'>
+            <h2>Cardigan</h2>
+            <p>Rp.55.000,00</p>
+            <label for='warna1'>Pilih warna:</label>
+            <select id='warna1'>
+                <option value='red'>Red</option>
+                <option value='blue'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+            <br>
+            <label for='ukuran1'>Pilih ukuran:</label>
+            <select id='ukuran1'>
+                <option value='small'>S</option>
+                <option value='medium'>M</option>
+                <option value='large'>L</option>
+            </select>
+            <br>
+            <p>Deskripsi:</p>
+            <p>Deskripsi produk cardigan ini...</p>
+            <br>
+            <a href='#' class="buy-now">Buy Now</a>
+        </div>
+
+		<div class='foto'>
+            <a data-fancybox data-src="#cardigan13" href="javascript:;">
+                <img src='img/cardigan13.jpeg'>
+                <h2>Cardigan</h2>
+                <p>Rp.55.000,00</p>
+                <span class="buy-now">Buy Now</span>
+            </a>
+        </div>
+        <div style='display:none;' id='cardigan13' class='modal'>
+            <img src='img/cardigan13.jpeg'>
+            <h2>Cardigan</h2>
+            <p>Rp.55.000,00</p>
+            <label for='warna1'>Pilih warna:</label>
+            <select id='warna1'>
+                <option value='red'>Red</option>
+                <option value='blue'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+            <br>
+            <label for='ukuran1'>Pilih ukuran:</label>
+            <select id='ukuran1'>
+                <option value='small'>S</option>
+                <option value='medium'>M</option>
+                <option value='large'>L</option>
+            </select>
+            <br>
+            <p>Deskripsi:</p>
+            <p>Deskripsi produk cardigan ini...</p>
+            <br>
+            <a href='#' class="buy-now">Buy Now</a>
+        </div>
+
+		<div class='foto'>
+            <a data-fancybox data-src="#cardigan14" href="javascript:;">
+                <img src='img/cardigan14.jpeg'>
+                <h2>Cardigan</h2>
+                <p>Rp.55.000,00</p>
+                <span class="buy-now">Buy Now</span>
+            </a>
+        </div>
+        <div style='display:none;' id='cardigan14' class='modal'>
+            <img src='img/cardigan14.jpeg'>
+            <h2>Cardigan</h2>
+            <p>Rp.55.000,00</p>
+            <label for='warna1'>Pilih warna:</label>
+            <select id='warna1'>
+                <option value='red'>Red</option>
+                <option value='blue'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+            <br>
+            <label for='ukuran1'>Pilih ukuran:</label>
+            <select id='ukuran1'>
+                <option value='small'>S</option>
+                <option value='medium'>M</option>
+                <option value='large'>L</option>
+            </select>
+            <br>
+            <p>Deskripsi:</p>
+            <p>Deskripsi produk cardigan ini...</p>
+            <br>
+            <a href='#' class="buy-now">Buy Now</a>
+        </div>
+
+		<div class='foto'>
+            <a data-fancybox data-src="#cardigan15" href="javascript:;">
+                <img src='img/cardigan15.jpeg'>
+                <h2>Cardigan</h2>
+                <p>Rp.55.000,00</p>
+                <span class="buy-now">Buy Now</span>
+            </a>
+        </div>
+        <div style='display:none;' id='cardigan15' class='modal'>
+            <img src='img/cardigan15.jpeg'>
+            <h2>Cardigan</h2>
+            <p>Rp.55.000,00</p>
+            <label for='warna1'>Pilih warna:</label>
+            <select id='warna1'>
+                <option value='red'>Red</option>
+                <option value='blue'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+            <br>
+            <label for='ukuran1'>Pilih ukuran:</label>
+            <select id='ukuran1'>
+                <option value='small'>S</option>
+                <option value='medium'>M</option>
+                <option value='large'>L</option>
+            </select>
+            <br>
+            <p>Deskripsi:</p>
+            <p>Deskripsi produk cardigan ini...</p>
+            <br>
+            <a href='#' class="buy-now">Buy Now</a>
+        </div>
+
+		<div class='foto'>
+            <a data-fancybox data-src="#cardigan16" href="javascript:;">
+                <img src='img/cardigan16.jpeg'>
+                <h2>Cardigan</h2>
+                <p>Rp.55.000,00</p>
+                <span class="buy-now">Buy Now</span>
+            </a>
+        </div>
+        <div style='display:none;' id='cardigan16' class='modal'>
+            <img src='img/cardigan16.jpeg'>
+            <h2>Cardigan</h2>
+            <p>Rp.55.000,00</p>
+            <label for='warna1'>Pilih warna:</label>
+            <select id='warna1'>
+                <option value='red'>Red</option>
+                <option value='blue'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+            <br>
+            <label for='ukuran1'>Pilih ukuran:</label>
+            <select id='ukuran1'>
+                <option value='small'>S</option>
+                <option value='medium'>M</option>
+                <option value='large'>L</option>
+            </select>
+            <br>
+            <p>Deskripsi:</p>
+            <p>Deskripsi produk cardigan ini...</p>
+            <br>
+            <a href='#' class="buy-now">Buy Now</a>
+        </div>
+
+		<div class='foto'>
+            <a data-fancybox data-src="#cardigan17" href="javascript:;">
+                <img src='img/cardigan17.jpeg'>
+                <h2>Cardigan</h2>
+                <p>Rp.55.000,00</p>
+                <span class="buy-now">Buy Now</span>
+            </a>
+        </div>
+        <div style='display:none;' id='cardigan17' class='modal'>
+            <img src='img/cardigan17.jpeg'>
+            <h2>Cardigan</h2>
+            <p>Rp.55.000,00</p>
+            <label for='warna1'>Pilih warna:</label>
+            <select id='warna1'>
+                <option value='red'>Red</option>
+                <option value='blue'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+            <br>
+            <label for='ukuran1'>Pilih ukuran:</label>
+            <select id='ukuran1'>
+                <option value='small'>S</option>
+                <option value='medium'>M</option>
+                <option value='large'>L</option>
+            </select>
+            <br>
+            <p>Deskripsi:</p>
+            <p>Deskripsi produk cardigan ini...</p>
+            <br>
+            <a href='#' class="buy-now">Buy Now</a>
+        </div>
+
+		<div class='foto'>
+            <a data-fancybox data-src="#cardigan18" href="javascript:;">
+                <img src='img/cardigan18.jpeg'>
+                <h2>Cardigan</h2>
+                <p>Rp.55.000,00</p>
+                <span class="buy-now">Buy Now</span>
+            </a>
+        </div>
+        <div style='display:none;' id='cardigan18' class='modal'>
+            <img src='img/cardigan18.jpeg'>
+            <h2>Cardigan</h2>
+            <p>Rp.55.000,00</p>
+            <label for='warna1'>Pilih warna:</label>
+            <select id='warna1'>
+                <option value='red'>Red</option>
+                <option value='blue'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+            <br>
+            <label for='ukuran1'>Pilih ukuran:</label>
+            <select id='ukuran1'>
+                <option value='small'>S</option>
+                <option value='medium'>M</option>
+                <option value='large'>L</option>
+            </select>
+            <br>
+            <p>Deskripsi:</p>
+            <p>Deskripsi produk cardigan ini...</p>
+            <br>
+            <a href='#' class="buy-now">Buy Now</a>
+        </div>
+
+		<div class='foto'>
+            <a data-fancybox data-src="#cardigan19" href="javascript:;">
+                <img src='img/cardigan19.jpeg'>
+                <h2>Cardigan</h2>
+                <p>Rp.55.000,00</p>
+                <span class="buy-now">Buy Now</span>
+            </a>
+        </div>
+        <div style='display:none;' id='cardigan19' class='modal'>
+            <img src='img/cardigan19.jpeg'>
+            <h2>Cardigan</h2>
+            <p>Rp.55.000,00</p>
+            <label for='warna1'>Pilih warna:</label>
+            <select id='warna1'>
+                <option value='red'>Red</option>
+                <option value='blue'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+            <br>
+            <label for='ukuran1'>Pilih ukuran:</label>
+            <select id='ukuran1'>
+                <option value='small'>S</option>
+                <option value='medium'>M</option>
+                <option value='large'>L</option>
+            </select>
+            <br>
+            <p>Deskripsi:</p>
+            <p>Deskripsi produk cardigan ini...</p>
+            <br>
+            <a href='#' class="buy-now">Buy Now</a>
+        </div>
+
+		<div class='foto'>
+            <a data-fancybox data-src="#cardigan20" href="javascript:;">
+                <img src='img/cardigan20.jpeg'>
+                <h2>Cardigan</h2>
+                <p>Rp.55.000,00</p>
+                <span class="buy-now">Buy Now</span>
+            </a>
+        </div>
+        <div style='display:none;' id='cardigan20' class='modal'>
+            <img src='img/cardigan20.jpeg'>
+            <h2>Cardigan</h2>
+            <p>Rp.55.000,00</p>
+            <label for='warna1'>Pilih warna:</label>
+            <select id='warna1'>
+                <option value='red'>Red</option>
+                <option value='blue'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+            <br>
+            <label for='ukuran1'>Pilih ukuran:</label>
+            <select id='ukuran1'>
+                <option value='small'>S</option>
+                <option value='medium'>M</option>
+                <option value='large'>L</option>
+            </select>
+            <br>
+            <p>Deskripsi:</p>
+            <p>Deskripsi produk cardigan ini...</p>
+            <br>
+            <a href='#' class="buy-now">Buy Now</a>
+        </div>
+
+		<div class='foto'>
+            <a data-fancybox data-src="#cardigan21" href="javascript:;">
+                <img src='img/cardigan21.jpeg'>
+                <h2>Cardigan</h2>
+                <p>Rp.55.000,00</p>
+                <span class="buy-now">Buy Now</span>
+            </a>
+        </div>
+        <div style='display:none;' id='cardigan21' class='modal'>
+            <img src='img/cardigan21.jpeg'>
+            <h2>Cardigan</h2>
+            <p>Rp.55.000,00</p>
+            <label for='warna1'>Pilih warna:</label>
+            <select id='warna1'>
+                <option value='red'>Red</option>
+                <option value='blue'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+            <br>
+            <label for='ukuran1'>Pilih ukuran:</label>
+            <select id='ukuran1'>
+                <option value='small'>S</option>
+                <option value='medium'>M</option>
+                <option value='large'>L</option>
+            </select>
+            <br>
+            <p>Deskripsi:</p>
+            <p>Deskripsi produk cardigan ini...</p>
+            <br>
+            <a href='#' class="buy-now">Buy Now</a>
+        </div>
+
+		<div class='foto'>
+            <a data-fancybox data-src="#cardigan22" href="javascript:;">
+                <img src='img/cardigan22.jpeg'>
+                <h2>Cardigan</h2>
+                <p>Rp.55.000,00</p>
+                <span class="buy-now">Buy Now</span>
+            </a>
+        </div>
+        <div style='display:none;' id='cardigan22' class='modal'>
+            <img src='img/cardigan22.jpeg'>
+            <h2>Cardigan</h2>
+            <p>Rp.55.000,00</p>
+            <label for='warna1'>Pilih warna:</label>
+            <select id='warna1'>
+                <option value='red'>Red</option>
+                <option value='blue'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+            <br>
+            <label for='ukuran1'>Pilih ukuran:</label>
+            <select id='ukuran1'>
+                <option value='small'>S</option>
+                <option value='medium'>M</option>
+                <option value='large'>L</option>
+            </select>
+            <br>
+            <p>Deskripsi:</p>
+            <p>Deskripsi produk cardigan ini...</p>
+            <br>
+            <a href='#' class="buy-now">Buy Now</a>
+        </div>
+
+		<div class='foto'>
+            <a data-fancybox data-src="#cardigan23" href="javascript:;">
+                <img src='img/cardigan23.jpeg'>
+                <h2>Cardigan</h2>
+                <p>Rp.55.000,00</p>
+                <span class="buy-now">Buy Now</span>
+            </a>
+        </div>
+        <div style='display:none;' id='cardigan23' class='modal'>
+            <img src='img/cardigan23.jpeg'>
+            <h2>Cardigan</h2>
+            <p>Rp.55.000,00</p>
+            <label for='warna1'>Pilih warna:</label>
+            <select id='warna1'>
+                <option value='red'>Red</option>
+                <option value='blue'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+            <br>
+            <label for='ukuran1'>Pilih ukuran:</label>
+            <select id='ukuran1'>
+                <option value='small'>S</option>
+                <option value='medium'>M</option>
+                <option value='large'>L</option>
+            </select>
+            <br>
+            <p>Deskripsi:</p>
+            <p>Deskripsi produk cardigan ini...</p>
+            <br>
+            <a href='#' class="buy-now">Buy Now</a>
+        </div>
+
+		<div class='foto'>
+            <a data-fancybox data-src="#cardigan24" href="javascript:;">
+                <img src='img/cardigan24.jpeg'>
+                <h2>Cardigan</h2>
+                <p>Rp.55.000,00</p>
+                <span class="buy-now">Buy Now</span>
+            </a>
+        </div>
+        <div style='display:none;' id='cardigan24' class='modal'>
+            <img src='img/cardigan24.jpeg'>
+            <h2>Cardigan</h2>
+            <p>Rp.55.000,00</p>
+            <label for='warna1'>Pilih warna:</label>
+            <select id='warna1'>
+                <option value='red'>Red</option>
+                <option value='blue'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+            <br>
+            <label for='ukuran1'>Pilih ukuran:</label>
+            <select id='ukuran1'>
+                <option value='small'>S</option>
+                <option value='medium'>M</option>
+                <option value='large'>L</option>
+            </select>
+            <br>
+            <p>Deskripsi:</p>
+            <p>Deskripsi produk cardigan ini...</p>
+            <br>
+            <a href='#' class="buy-now">Buy Now</a>
+        </div>
+
+		<div class='foto'>
+            <a data-fancybox data-src="#cardigan25" href="javascript:;">
+                <img src='img/cardigan25.jpeg'>
+                <h2>Sweater</h2>
+                <p>Rp.55.000,00</p>
+                <span class="buy-now">Buy Now</span>
+            </a>
+        </div>
+        <div style='display:none;' id='cardigan25' class='modal'>
+            <img src='img/cardigan25.jpeg'>
+            <h2>Sweater</h2>
+            <p>Rp.55.000,00</p>
+            <label for='warna1'>Pilih warna:</label>
+            <select id='warna1'>
+                <option value='red'>Red</option>
+                <option value='blue'>Blue</option>
+                <option value='green'>Green</option>
+            </select>
+            <br>
+            <label for='ukuran1'>Pilih ukuran:</label>
+            <select id='ukuran1'>
+                <option value='small'>S</option>
+                <option value='medium'>M</option>
+                <option value='large'>L</option>
+            </select>
+            <br>
+            <p>Deskripsi:</p>
+            <p>Deskripsi produk cardigan ini...</p>
+            <br>
+            <a href='#' class="buy-now">Buy Now</a>
+        </div>
+       
+       
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <small>Copyright &copy; 2024 - Thrift.Wear. All Right reserves.</small>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('[data-fancybox]').fancybox({
+                toolbar  : false,
+                smallBtn : true,
+                iframe : {
+                    preload : false
+                },
+                animationEffect: "fade",
+                transitionEffect: "fade"
+            });
+        });
+    </script>
+
+</body>
+</html>

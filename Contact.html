@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thrift.Wear</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body {
+            background-color: white;
+            color: #e6677a;
+        }
+        .medsos ul {
+            padding: 0;
+            list-style: none;
+        }
+        .medsos ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        .medsos ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        header, .label, .contact-info, .form-pemesanan, footer {
+            padding: 20px;
+        }
+        .contact-info .box {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .contact-info .col-4 {
+            flex: 1;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        h3 {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            background-color: #FFB6C1;
+            color: #0e9087;
+        }
+        td {
+            padding: 10px;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            color: black;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body class="w3-black">
+
+    <!-- header -->
+    <div class="medsos">
+        <div class="container">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-x"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <h1><a href="Index.html">THRIFT.WEAR</a></h1>
+            <ul>
+                <li><a href="Index.html">Home</a></li>   
+                <li><a href="PRODUCT.html">Product</a></li>
+                <li><a href="Service.html">Service</a></li>
+                <li><a href="register.html">Contact</a></li>
+                <li><a href="admin login.html">Login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- label -->
+    <section class="label">
+        <div class="container">
+            <p>Home / Contact</p>
+        </div>
+    </section>
+
+    <!-- contact info -->
+    <section class="contact-info">
+        <div class="container">
+            <h3>Contact Info</h3>
+            <div class="box">
+                <div class="col-4">
+                    <h4>Alamat</h4>
+                    <p>Jln. Depot Ain Rambutan 2</p>
+                </div>
+                <div class="col-4">
+                    <h4>Email</h4>
+                    <p>MithaSeptiani04@gmail.com</p>
+                </div>
+                <div class="col-4">
+                    <h4>Instagram</h4>
+                    <p>@Thrift.wear</p>
+                </div>
+                <div class="col-4">
+                    <h4>No Whatsapp</h4>
+                    <p>085348701226</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Pemesanan -->
+    <section class="form-pemesanan">
+        <div class="container">
+            <h3>Isi Data Untuk Memesan</h3>
+            <form action="proses_pesan.php" method="post">
+                <table>
+                    <tr>
+                        <td width="130">Nama</td>
+                        <td><input type="text" name="nama" required></td>
+                    </tr>
+                    <tr>
+                        <td width="130">Nomor</td>
+                        <td><input type="text" name="nomor" required></td>
+                    </tr>
+                    <tr>
+                        <td width="130">Produk</td>
+                        <td><input type="text" name="produk" required></td>
+                    </tr>
+                    <tr>
+                        <td width="130">Jumlah</td>
+                        <td><input type="number" name="jumlah" required></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="kirim" name="proses"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </section>
+   
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <small>Copyright &copy; 2024 - Thrift.Wear. All Right reserved.</small>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".bg-loader").hide();
+        });
+    </script>
+
+</body>
+</html>
